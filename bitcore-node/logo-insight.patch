@@ -1,0 +1,29 @@
+diff --git a/public/index.html b/public/index.html
+index a227618..f911e70 100644
+--- a/public/index.html
++++ b/public/index.html
+@@ -6,7 +6,7 @@
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+ 	<meta name="fragment" content="!">
+-	<title data-ng-bind="$root.title + $root.titleDetail + ' | Insight'">Insight</title>
++	<title data-ng-bind="$root.title + $root.titleDetail + ' | Bitcoin Insight by Berrywallet'">Bitcoin Insight by Berrywallet</title>
+ 	<meta name="keywords" content="bitcoins, transactions, blocks, address, block chain, best block, mining difficulty, hash serialized">
+ 	<meta name="description" content="Bitcoin Insight. View detailed information on all bitcoin transactions and block. {{ $root.title + $root.titleDetail }}">
+ 	<link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+diff --git a/public/views/includes/header.html b/public/views/includes/header.html
+index c00b8ff..b5d1490 100644
+--- a/public/views/includes/header.html
++++ b/public/views/includes/header.html
+@@ -7,7 +7,10 @@
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+-      <a class="insight navbar-brand" href=".">insight</a>
++      <div class="insight navbar-brand" style="position: relative;min-height: 63px; padding: 15px 8px !important;">
++        <a href="." style="color: white;font-size: 24px;">Bitcoin Insight</a>
++        <a href="https://berrywallet.io" title="Tastiest cryptocurrency wallet" style="position: absolute;cursor: pointer;color: white;font-size: 10px;bottom: 4px;background: rgb(178, 36, 239);border-radius: 3px;padding: 3px 8px;right: 7px;line-height: 1;">by Berrywallet</a>
++      </div>
+     </div>
+     <div class="navbar-collapse collapse" collapse="$root.isCollapsed">
+       <ul class="nav navbar-nav">
